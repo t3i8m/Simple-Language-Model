@@ -2,7 +2,7 @@ import torch.nn as nn
 
 VOCAB_SIZE = 30522 # BERT tokenizer
 EMB_DIM    = 64
-HID_DIM    = 128
+HID_DIM    = 128 # hidden
 WINDOW     = 5 # context
 
 class FeedforwardLM(nn.Module):
