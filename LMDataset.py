@@ -23,7 +23,7 @@ class LMDataset(Dataset):
         return len(self.X)
 
     def __getitem__(self, idx):
-        return self.X[idx], self.y[idx]
+        return self.X_tensor[idx], self.y_tensor[idx]
     
     @staticmethod
     def _load_X_Y(csv_path)->(tuple):

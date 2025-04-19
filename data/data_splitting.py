@@ -24,7 +24,6 @@ for n in range(window, len(all_token_ids), window):
 print(X)
 # print(Y)
 header = [f"tok{i}" for i in range(1, window + 1)] + ["target"]
-
 with open("data/train.csv", mode = "w") as f:
     f.write(",".join(header) + "\n")
 

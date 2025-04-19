@@ -7,10 +7,11 @@ def main():
     dataset = LMDataset("data/train.csv")
     loader = DataLoader(dataset, batch_size=64, shuffle=True)
 
-    trainer = Trainer
+    model = FeedforwardLM()
+    trainer = Trainer(model, loader)
 
+    trainer.train(5)
     print(len(dataset), dataset[0])
-
     return
 
 
